@@ -1,0 +1,64 @@
+.navbar-sticky {
+	opacity: 0.95;
+	background-color: #f9fafe;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.carousel-control {
+	&,
+	&:focus {
+		width: 3rem;
+		height: 3rem;
+		border: 1px solid #4555d2;
+		border-radius: 50%;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+		color: #4555d2;
+		background-color: #fff;
+	}
+
+	&:hover,
+	&:focus-visible {
+		color: #fff;
+		background-color: #4555d2;
+	}
+}
+
+@media (max-width: 575px) {
+	header,
+	.section-cta {
+		& .decoration-star {
+			top: 20% !important;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.decoration-star {
+		width: 400px;
+	}
+}
+
+@media (min-width: 768px) {
+	.decoration-star {
+		width: 500px;
+	}
+}
+
+@media (min-width: 2400px) {
+	.decoration-star {
+		width: 570px;
+
+		&-left {
+			transform: translateX(-30%) !important;
+		}
+		&-right {
+			transform: translateX(-70%) !important;
+		}
+	}
+}
