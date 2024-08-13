@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => incrementStats(metrics, 1));
 window.addEventListener("scroll", () => (window.scrollY >= 50 ? addStickyNavigation() : removeStickyNavigation()));
 btnUp.addEventListener("click", scrollTop);
 
-contactForm.addEventListener("submit", (event) => {
+contactForm?.addEventListener("submit", (event) => {
 	if (!contactForm.checkValidity()) {
 		event.preventDefault();
 		event.stopPropagation();
